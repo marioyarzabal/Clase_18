@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bienvenidos al Curso de Python - Comision 50200</h1>
+    <h2>Esta es la clase introductoria de Django (framework)</h2>
+    <h3>Hoy estamos aprendiendo la arquitectura MTV Model Template View</h3>
+    <h4>Esta es una actualización de la pagina anterior</h4>
+    <br>
+    <h1>Nombre {{nombre}}</h1>
+    <h1>Apellido {{apellido}}</h1>
+    <h1>Autor {{autor}}</h1>
+    <h1><p style="color: blue"> Fecha de creacion {{fecha}}</p></h1>
+    <h1><p style="color: blue"> Notas del alumno</p></h1>
+
+    {%for n in notas%}
+        {{n}}
+        <br>
+    {%endfor%}
+</body>
+</html>
